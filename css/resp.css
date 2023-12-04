@@ -1,0 +1,158 @@
+@media screen and (max-width: 1250px) {
+
+    .menu {
+        padding: 20px;
+        width: 100%;
+    }
+}
+
+@media screen and (max-width: 1210px) {
+    .menu {
+        margin-right: 0;
+    }
+}
+
+@media screen and (max-width: 1110px) {
+    .wrapper .table {
+        text-align: center;
+        width: calc(50% - 20px);
+        margin-bottom: 40px;
+        justify-content: center;
+    }
+}
+
+@media screen and (max-width: 1020px) {
+
+    .wrapper .table {
+        width: calc(50% - 20px);
+        margin-bottom: 40px;
+    }
+
+    .img-feedback {
+        width: calc(50% - 20px);
+        margin-bottom: 40px;
+    }
+
+    .header {
+        margin-top: 0px;
+        text-align: center;
+    }
+
+    .headline {
+        margin-top: 0px;
+        flex: 100%;
+        margin: 5%;
+        text-align: center;
+    }
+
+    .headline p {
+        margin-top: 0px;
+        padding-top: 5px;
+        text-align: center;
+    }
+
+    .img-headline {
+        flex: 100%;
+        margin: 0;
+        text-align: center;
+        max-width: 100%;
+        height: 100%;
+    }
+
+    .card {
+        text-align: center;
+        width: 100%;
+    }
+
+    .listaEsquerda {
+        margin-left: 20px;
+    }
+
+    ul {
+        margin-right: 10px;
+        margin-left: 15px;
+    }
+}
+
+@media screen and (max-width: 742px) {
+    .navbar {
+        flex-flow: row wrap;
+        align-items: flex-start;
+    }
+
+    .logo,
+    .menu {
+        flex: 100%;
+        text-align: center;
+        margin: 0;
+        padding: 10px;
+    }
+
+    .menu a {
+        display: block;
+        padding: 10px;
+    }
+
+    .img {
+        height: 500px;
+        width: auto;
+    }
+
+    .menu {
+        display: contents;
+    }
+
+    .img-headline {
+        text-align: center;
+        width: 300px;
+        height: auto;
+    }
+
+    .direita,
+    .esquerda {
+        display: none;
+    }
+
+    .listaEsquerda,
+    .listaDireita {
+        margin-right: 20px;
+        margin-left: 20px;
+        width: 50%;
+    }
+}
+
+@media screen and (max-width: 660px) {
+    .wrapper .table {
+        flex-direction: column;
+        width: 100%;
+    }
+}
+
+@media screen and (max-width: 742px) {
+    .img {
+        height: 400px;
+        width: auto;
+    }
+
+    .img-feedback {
+        display: none;
+    }
+
+    .feedback {
+        visibility: hidden;
+    }
+}
+
+@media screen and (max-width: 457px) {
+    .img {
+        height: 300px;
+        width: auto;
+    }
+}
+
+@media screen and (max-width: 330px) {
+    .img {
+        height: 200px;
+        width: auto;
+    }
+}
