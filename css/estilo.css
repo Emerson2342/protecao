@@ -381,7 +381,6 @@
       border-radius: 5px;
       background: #ecb6e6;
       cursor: pointer;
-
   }
 
   .header {
@@ -402,8 +401,8 @@
   }
 
   .headline h2 {
-      font-family: 'Roboto Mono', monospace;
-      font-weight: 900;
+
+      font-weight: 1000;
       font-size: 20px;
       text-align: center;
       font-size: 50px;
@@ -538,10 +537,6 @@
       background: #fff;
   }
 
-  .conteudo {
-      margin-top: 130px;
-      background: #9223f3;
-  }
 
   footer {
       padding-bottom: 35px;
@@ -552,21 +547,17 @@
 
   }
 
-  .feedback1 {
-      width: 90%;
-      margin-left: 5%;
-      margin-right: 5%;
-      text-align: center;
-  }
-
   .logo-rodape {
       padding-bottom: 140px;
+
   }
 
   .agencia {
       color: white;
       font-size: 33px;
+      font-family: 'Roboto Mono', monospace;
   }
+
 
   .up {
       position: fixed;
