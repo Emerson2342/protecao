@@ -74,6 +74,12 @@
     }
 }
 
+@media screen and (max-width: 750px) {
+    .logo h1 {
+        font-size: 40px;
+    }
+}
+
 @media screen and (max-width: 742px) {
     .navbar {
         flex-flow: row wrap;
@@ -128,6 +134,12 @@
     }
 }
 
+@media screen and (max-width: 630px) {
+    .logo h1 {
+        font-size: 30px;
+    }
+}
+
 @media screen and (max-width: 575px) {
     .img {
         height: 450px;
@@ -143,6 +155,12 @@
 }
 
 @media screen and (max-width: 457px) {
+    .logo h1 {
+        font-size: 25px;
+    }
+}
+
+@media screen and (max-width: 457px) {
     .img {
         height: 300px;
         width: auto;
@@ -150,11 +168,6 @@
 }
 
 @media screen and (max-width: 395px) {
-    .logo h1 {
-        font-size: 25px;
-        font-family: serif;
-    }
-
     .menu a {
         font-size: 15px;
     }
@@ -195,8 +208,19 @@
 }
 
 @media screen and (max-width: 380px) {
+    .logo h1 {
+        font-size: 20px;
+    }
+
     .img {
         height: 300px;
+        width: auto;
+    }
+}
+
+@media screen and (max-width: 340px) {
+    .img {
+        height: 250px;
         width: auto;
     }
 }
