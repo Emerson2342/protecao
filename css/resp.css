@@ -1,5 +1,4 @@
 @media screen and (max-width: 1250px) {
-
     .menu {
         padding: 20px;
         width: 100%;
@@ -22,7 +21,6 @@
 }
 
 @media screen and (max-width: 1020px) {
-
     .wrapper .table {
         width: calc(50% - 20px);
         margin-bottom: 40px;
