@@ -301,22 +301,15 @@ body {
     text-align: center;
     white-space: nowrap;
 
-
 }
 
 .logo h1 {
-    font-family: 'Roboto Mono', monospace;
-    color: black;
-    font-size: 50px;
-
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-size: 40px;
 }
 
 .menu {
-    text-align: center;
-    padding: 20px;
-
     white-space: nowrap;
-
 }
 
 .menu a {
