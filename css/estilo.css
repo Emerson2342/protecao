@@ -287,10 +287,14 @@ body {
     display: flex;
     flex-flow: row wrap;
     height: 130px;
+    top: 0;
     align-items: center;
     position: fixed;
     justify-content: center;
     background-color: #ecb6e6;
+    margin-left: 10%;
+    border-bottom-left-radius: 15px;
+    border-bottom-right-radius: 15px;
 }
 
 .logo {
@@ -329,11 +333,10 @@ body {
 
 #botao {
     transition: all 0.3s ease;
-    background: black;
+    background: #6e379b;
     padding: 10px 25px;
     color: white;
-    border: 1px solid #391d50;
-    border-radius: 15px;
+    border-radius: 7px;
     margin-left: 5%;
     margin-right: 10%;
 }
@@ -341,28 +344,25 @@ body {
 #botao:hover {
     color: #6e379b;
     border-radius: 5px;
-    background: #fff;
+    background: #ecb6e6;
     cursor: pointer;
 }
 
 #botao2 {
-    padding: 15px;
-    background: black;
-    color: white;
+    padding: 20px;
+    background: #ecb6e6;
+    color: black;
     text-decoration: none;
     border-radius: 5px;
     transition: all 0.3s ease;
-}
-
-.contact-btn {
-    font-size: 10px;
-    font-weight: bold;
+    font-size: 15px;
+    font-weight: 700;
 }
 
 #botao2:hover {
-    color: #6e379b;
+    color: #ecb6e6;
     border-radius: 5px;
-    background: #ecb6e6;
+    background: #6e379b;
     cursor: pointer;
 }
 
@@ -377,6 +377,7 @@ body {
 .headline {
     align-self: flex-start;
     flex: 70%;
+    margin-bottom: 55px;
 }
 
 .headline h2 {
@@ -411,6 +412,8 @@ body {
 }
 
 .item {
+    margin-top: 55px;
+    margin-bottom: 55px;
     display: flex;
     justify-content: space-between;
     margin-bottom: 20px;
@@ -451,7 +454,7 @@ section {
 .title {
     text-align: center;
     width: 100%;
-    font-size: 30px;
+    font-size: 50px;
     font-weight: bold;
 }
 
@@ -499,6 +502,6 @@ footer {
 .whats2,
 .insta,
 .face {
-    width: 25px;
+    width: 35px;
 
 }
