@@ -1,504 +1,504 @@
-  @import url('https://fonts.googleapis.com/css2?family=Roboto+Mono:ital,wght@0,600;1,600;1,700&family=Roboto:wght@100;300;500;700&display=swap');
-
-  * {
-      scroll-behavior: smooth;
-      margin: 0;
-      padding: 0;
-      box-sizing: border-box;
-      font-family: 'Poppins', sans-serif;
-  }
-
-  body {
-      margin-top: 130px;
-      height: 100%;
-      justify-content: center;
-      align-items: center;
-      min-height: 100vh;
-  }
-
-  .wrapper {
-      margin-left: 5%;
-      margin-right: 5%;
-      padding: 25px;
-      width: 90%;
-      display: flex;
-      justify-content: space-between;
-      background: #ecb6e6;
-      border-bottom-right-radius: 35px;
-      border-bottom-left-radius: 35px;
-      border-top-right-radius: 35px;
-      border-top-left-radius: 35px;
-      flex-wrap: wrap;
-  }
-
-  .wrapper .table {
-      width: calc(30%-20px);
-      padding: 10px;
-      border-radius: 15px;
-      background: #fff;
-      position: relative;
-  }
-
-  .table .price-section {
-      display: flex;
-      justify-content: center;
-  }
-
-  .price-section .price-area {
-      height: 120px;
-      width: 120px;
-      border-radius: 50%;
-      padding: 2px;
-  }
-
-  .price-area .inner-area {
-      height: 100%;
-      width: 100%;
-      border-radius: 50%;
-      border: 3px solid #fff;
-      color: #fff;
-      line-height: 130px;
-      text-align: center;
-      position: relative;
-  }
-
-  .price-area .inner-area .text {
-      font-size: 20px;
-      font-weight: 400;
-      position: absolute;
-      top: -40px;
-      left: 45px;
-  }
-
-  .price-area .inner-area .cents {
-      font-size: 20px;
-      font-weight: 400;
-      position: absolute;
-      top: -1px;
-      left: 75px;
-  }
-
-  .table .plano {
-      font-size: 35px;
-      text-align: center;
-      padding: 20px;
-  }
-
-  .table .from {
-      font-size: 35px;
-      text-align: center;
-      padding: 20px;
-  }
-
-  .price-area .inner-area .price {
-      font-size: 45px;
-      font-weight: 500;
-      position: absolute;
-      top: -10px;
-      left: 3px;
-  }
-
-  .table .package-name {
-      width: 100%;
-      height: 4px;
-      margin: 50px 0;
-      position: relative;
-  }
-
-  .table .package-name::before {
-      position: absolute;
-      content: "Plano Roubo e Furto";
-      left: 50%;
-      top: 50%;
-      background: #fff;
-      font-size: 25px;
-      font-weight: 500;
-      padding: 1 15px;
-      transform: translate(-50%, -50%);
-  }
-
-  .table .features li {
-      margin-bottom: 15px;
-      list-style: none;
-      display: flex;
-      justify-content: space-between;
-  }
-
-  .features li .list-name {
-      font-size: 17px;
-      font-weight: 400;
-  }
-
-  .table .btn {
-      display: flex;
-      justify-content: center;
-      margin-top: 35px;
-  }
-
-  .table .btn button {
-      width: 80%;
-      height: 50px;
-      color: #fff;
-      font-size: 20px;
-      font-weight: 500;
-      border: none;
-      outline: none;
-      border-radius: 25px;
-      cursor: pointer;
-      transition: all 0.3s ease;
-  }
-
-  .table .btn button:hover {
-      border-radius: 5px;
-  }
-
-  .table ::selection {
-      color: #fff;
-  }
-
-  .basic ::selection,
-  .basic .price-area,
-  .basic .inner-area {
-      background: #ffd861;
-  }
-
-  .basic .btn button {
-      background: #fff;
-      color: #ffd861;
-      border: 2px solid #ffd861;
-  }
-
-  .basic .btn button:hover {
-      color: #fff;
-      background: #ffd861;
-  }
-
-  .standard .btn button:hover {
-      color: #a26bfa;
-      background: #fff;
-  }
-
-  .standard ::selection,
-  .standard .price-area,
-  .standard .inner-area,
-  .standard .btn button {
-      background: #a26bfa;
-      color: #fff;
-  }
-
-  .standard .btn button {
-      background: #fff;
-      color: #a26bfa;
-      border: 2px solid #a26bfa;
-  }
-
-  .standard .btn button:hover {
-      color: #fff;
-      background: #a26bfa;
-  }
-
-  .premium ::selection,
-  .premium .price-area,
-  .premium .inner-area {
-      background: #43ef8b;
-  }
-
-  .premium .btn button {
-      background: #43ef8b;
-      color: #fff;
-      border: 2px solid #43ef8b;
-  }
-
-  .premium .btn button:hover {
-      color: #43ef8b;
-      background: #fff;
-  }
-
-  .basic .package-name {
-      background: #ffecb3;
-  }
-
-  .standard .package-name {
-      background: #a26bfa;
-  }
-
-  .premium .package-name {
-      background: #43ef8b;
-  }
-
-  .basic .package-name::before {
-      content: "Plano Roubo e Furto";
-  }
-
-  .standard .package-name::before {
-      content: "Plano Padrão";
-  }
-
-  .premium .package-name::before {
-      content: "Plano Master";
-  }
-
-  .table .ribbon {
-      height: 150px;
-      width: 150px;
-      position: absolute;
-      top: -13px;
-      left: -13px;
-      overflow: hidden;
-  }
-
-  .table .ribbon::before,
-  .table .ribbon::after {
-      position: absolute;
-      content: "";
-      display: block;
-      border: 7px solid #43ef8b;
-      border-top-color: transparent;
-      border-left-color: transparent;
-  }
-
-  .table .ribbon::before {
-      top: 0px;
-      right: 23px;
-  }
-
-  .table .ribbon::after {
-      bottom: 23px;
-      left: 0px;
-  }
-
-  .table .ribbon span {
-      position: absolute;
-      background: #43ef8b;
-      width: 200px;
-      padding: 10px 0;
-      color: #fff;
-      text-align: center;
-      top: 30px;
-      right: 0px;
-      text-transform: uppercase;
-      transform: rotate(-45deg);
-      box-shadow: 0 5px 10px rgb(0, 0, 15, 0.12);
-  }
-
-  .navbar {
-      transition: top 0.3s;
-      width: 75%;
-      display: flex;
-      flex-flow: row wrap;
-      height: 130px;
-      align-items: center;
-      position: fixed;
-      justify-content: center;
-      background-color: #ecb6e6;
-  }
-
-  .logo {
-      text-align: center;
-      white-space: nowrap;
-
-
-  }
-
-  .logo h1 {
-      font-family: 'Roboto Mono', monospace;
-      color: black;
-      font-size: 50px;
-
-  }
-
-  .menu {
-      text-align: center;
-      padding: 20px;
-
-      white-space: nowrap;
-
-  }
-
-  .menu a {
-      color: black;
-      text-decoration: none;
-      font-size: 20px;
-      padding: 10px 10px;
-  }
-
-  .menu a:hover {
-      color: #6e379b;
-      border-top: 4px solid #6e379b;
-  }
-
-  #botao {
-      transition: all 0.3s ease;
-      background: black;
-      padding: 10px 25px;
-      color: white;
-      border: 1px solid #391d50;
-      border-radius: 15px;
-      margin-left: 5%;
-      margin-right: 10%;
-  }
-
-  #botao:hover {
-      color: #6e379b;
-      border-radius: 5px;
-      background: #fff;
-      cursor: pointer;
-  }
-
-  #botao2 {
-      padding: 15px;
-      background: black;
-      color: white;
-      text-decoration: none;
-      border-radius: 5px;
-      transition: all 0.3s ease;
-  }
-
-  .contact-btn {
-      font-size: 10px;
-      font-weight: bold;
-  }
-
-  #botao2:hover {
-      color: #6e379b;
-      border-radius: 5px;
-      background: #ecb6e6;
-      cursor: pointer;
-  }
-
-  .header {
-      margin: auto;
-      display: flex;
-      flex-flow: row wrap;
-      align-items: center;
-      width: 70%;
-  }
-
-  .headline {
-      align-self: flex-start;
-      flex: 70%;
-  }
-
-  .headline h2 {
-      padding: 15px;
-      font-weight: 1000;
-      text-align: center;
-      font-size: 25px;
-
-  }
-
-  .headline h3 {
-      font-family: 'Roboto Mono', monospace;
-      letter-spacing: 2px;
-      font-weight: 900;
-      font-size: 20px;
-      text-align: center;
-  }
-
-  .headline p {
-      font-size: 20px;
-      text-align: center;
-      margin-left: 5%;
-  }
-
-  .img-headline {
-      flex: 10%;
-  }
-
-  .img {
-      width: 250px;
-      height: auto;
-  }
-
-  .item {
-      display: flex;
-      justify-content: space-between;
-      margin-bottom: 20px;
-      width: 100%;
-
-  }
-
-  .lista {
-      margin-left: 15%;
-
-  }
-
-  .images {
-      display: flex;
-      flex-direction: column;
-      margin-right: 15%;
-
-  }
-
-  .direita {
-      width: 200px;
-      height: auto;
-      margin-left: auto;
-  }
-
-  li {
-      font-size: 20px;
-      margin-bottom: 5px;
-  }
-
-
-  section {
-      width: 70%;
-      margin: auto;
-      text-align: center;
-  }
-
-  .title {
-      text-align: center;
-      width: 100%;
-      font-size: 30px;
-      font-weight: bold;
-  }
-
-  .planos {
-      border-radius: 35px;
-      padding-bottom: 35px;
-  }
-
-  .container {
-      width: 80%;
-      margin: auto;
-      display: flex;
-      flex-direction: column;
-      align-items: flex-start;
-      border-radius: 35px;
-  }
-
-  footer {
-      padding-bottom: 35px;
-      width: 100%;
-      text-align: center;
-  }
-
-  .logo-rodape {
-      padding-bottom: 140px;
-  }
-
-  .agencia {
-      font-size: 33px;
-      font-family: 'Roboto Mono', monospace;
-  }
-
-  .up {
-      position: fixed;
-      bottom: 20px;
-      left: 5%;
-  }
-
-  .whats {
-      position: fixed;
-      bottom: 20px;
-      right: 5%;
-  }
-
-  .whats2,
-  .insta,
-  .face {
-      width: 25px;
-
-  }
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Mono:ital,wght@0,600;1,600;1,700&family=Roboto:wght@100;300;500;700&display=swap');
+
+* {
+    scroll-behavior: smooth;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+body {
+    margin-top: 130px;
+    height: 100%;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+
+.wrapper {
+    margin-left: 5%;
+    margin-right: 5%;
+    padding: 25px;
+    width: 90%;
+    display: flex;
+    justify-content: space-between;
+    background: #ecb6e6;
+    border-bottom-right-radius: 35px;
+    border-bottom-left-radius: 35px;
+    border-top-right-radius: 35px;
+    border-top-left-radius: 35px;
+    flex-wrap: wrap;
+}
+
+.wrapper .table {
+    width: calc(30%-20px);
+    padding: 10px;
+    border-radius: 15px;
+    background: #fff;
+    position: relative;
+}
+
+.table .price-section {
+    display: flex;
+    justify-content: center;
+}
+
+.price-section .price-area {
+    height: 120px;
+    width: 120px;
+    border-radius: 50%;
+    padding: 2px;
+}
+
+.price-area .inner-area {
+    height: 100%;
+    width: 100%;
+    border-radius: 50%;
+    border: 3px solid #fff;
+    color: #fff;
+    line-height: 130px;
+    text-align: center;
+    position: relative;
+}
+
+.price-area .inner-area .text {
+    font-size: 20px;
+    font-weight: 400;
+    position: absolute;
+    top: -40px;
+    left: 45px;
+}
+
+.price-area .inner-area .cents {
+    font-size: 20px;
+    font-weight: 400;
+    position: absolute;
+    top: -1px;
+    left: 75px;
+}
+
+.table .plano {
+    font-size: 35px;
+    text-align: center;
+    padding: 20px;
+}
+
+.table .from {
+    font-size: 35px;
+    text-align: center;
+    padding: 20px;
+}
+
+.price-area .inner-area .price {
+    font-size: 45px;
+    font-weight: 500;
+    position: absolute;
+    top: -10px;
+    left: 3px;
+}
+
+.table .package-name {
+    width: 100%;
+    height: 4px;
+    margin: 50px 0;
+    position: relative;
+}
+
+.table .package-name::before {
+    position: absolute;
+    content: "Plano Roubo e Furto";
+    left: 50%;
+    top: 50%;
+    background: #fff;
+    font-size: 25px;
+    font-weight: 500;
+    padding: 1 15px;
+    transform: translate(-50%, -50%);
+}
+
+.table .features li {
+    margin-bottom: 15px;
+    list-style: none;
+    display: flex;
+    justify-content: space-between;
+}
+
+.features li .list-name {
+    font-size: 17px;
+    font-weight: 400;
+}
+
+.table .btn {
+    display: flex;
+    justify-content: center;
+    margin-top: 35px;
+}
+
+.table .btn button {
+    width: 80%;
+    height: 50px;
+    color: #fff;
+    font-size: 20px;
+    font-weight: 500;
+    border: none;
+    outline: none;
+    border-radius: 25px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.table .btn button:hover {
+    border-radius: 5px;
+}
+
+.table ::selection {
+    color: #fff;
+}
+
+.basic ::selection,
+.basic .price-area,
+.basic .inner-area {
+    background: #ffd861;
+}
+
+.basic .btn button {
+    background: #fff;
+    color: #ffd861;
+    border: 2px solid #ffd861;
+}
+
+.basic .btn button:hover {
+    color: #fff;
+    background: #ffd861;
+}
+
+.standard .btn button:hover {
+    color: #a26bfa;
+    background: #fff;
+}
+
+.standard ::selection,
+.standard .price-area,
+.standard .inner-area,
+.standard .btn button {
+    background: #a26bfa;
+    color: #fff;
+}
+
+.standard .btn button {
+    background: #fff;
+    color: #a26bfa;
+    border: 2px solid #a26bfa;
+}
+
+.standard .btn button:hover {
+    color: #fff;
+    background: #a26bfa;
+}
+
+.premium ::selection,
+.premium .price-area,
+.premium .inner-area {
+    background: #43ef8b;
+}
+
+.premium .btn button {
+    background: #43ef8b;
+    color: #fff;
+    border: 2px solid #43ef8b;
+}
+
+.premium .btn button:hover {
+    color: #43ef8b;
+    background: #fff;
+}
+
+.basic .package-name {
+    background: #ffecb3;
+}
+
+.standard .package-name {
+    background: #a26bfa;
+}
+
+.premium .package-name {
+    background: #43ef8b;
+}
+
+.basic .package-name::before {
+    content: "Plano Roubo e Furto";
+}
+
+.standard .package-name::before {
+    content: "Plano Padrão";
+}
+
+.premium .package-name::before {
+    content: "Plano Master";
+}
+
+.table .ribbon {
+    height: 150px;
+    width: 150px;
+    position: absolute;
+    top: -13px;
+    left: -13px;
+    overflow: hidden;
+}
+
+.table .ribbon::before,
+.table .ribbon::after {
+    position: absolute;
+    content: "";
+    display: block;
+    border: 7px solid #43ef8b;
+    border-top-color: transparent;
+    border-left-color: transparent;
+}
+
+.table .ribbon::before {
+    top: 0px;
+    right: 23px;
+}
+
+.table .ribbon::after {
+    bottom: 23px;
+    left: 0px;
+}
+
+.table .ribbon span {
+    position: absolute;
+    background: #43ef8b;
+    width: 200px;
+    padding: 10px 0;
+    color: #fff;
+    text-align: center;
+    top: 30px;
+    right: 0px;
+    text-transform: uppercase;
+    transform: rotate(-45deg);
+    box-shadow: 0 5px 10px rgb(0, 0, 15, 0.12);
+}
+
+.navbar {
+    transition: top 0.3s;
+    width: 75%;
+    display: flex;
+    flex-flow: row wrap;
+    height: 130px;
+    align-items: center;
+    position: fixed;
+    justify-content: center;
+    background-color: #ecb6e6;
+}
+
+.logo {
+    text-align: center;
+    white-space: nowrap;
+
+
+}
+
+.logo h1 {
+    font-family: 'Roboto Mono', monospace;
+    color: black;
+    font-size: 50px;
+
+}
+
+.menu {
+    text-align: center;
+    padding: 20px;
+
+    white-space: nowrap;
+
+}
+
+.menu a {
+    color: black;
+    text-decoration: none;
+    font-size: 20px;
+    padding: 10px 10px;
+}
+
+.menu a:hover {
+    color: #6e379b;
+    border-top: 4px solid #6e379b;
+}
+
+#botao {
+    transition: all 0.3s ease;
+    background: black;
+    padding: 10px 25px;
+    color: white;
+    border: 1px solid #391d50;
+    border-radius: 15px;
+    margin-left: 5%;
+    margin-right: 10%;
+}
+
+#botao:hover {
+    color: #6e379b;
+    border-radius: 5px;
+    background: #fff;
+    cursor: pointer;
+}
+
+#botao2 {
+    padding: 15px;
+    background: black;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: all 0.3s ease;
+}
+
+.contact-btn {
+    font-size: 10px;
+    font-weight: bold;
+}
+
+#botao2:hover {
+    color: #6e379b;
+    border-radius: 5px;
+    background: #ecb6e6;
+    cursor: pointer;
+}
+
+.header {
+    margin: auto;
+    display: flex;
+    flex-flow: row wrap;
+    align-items: center;
+    width: 70%;
+}
+
+.headline {
+    align-self: flex-start;
+    flex: 70%;
+}
+
+.headline h2 {
+    padding: 15px;
+    font-weight: 1000;
+    text-align: center;
+    font-size: 25px;
+
+}
+
+.headline h3 {
+    font-family: 'Roboto Mono', monospace;
+    letter-spacing: 2px;
+    font-weight: 900;
+    font-size: 20px;
+    text-align: center;
+}
+
+.headline p {
+    font-size: 20px;
+    text-align: center;
+    margin-left: 5%;
+}
+
+.img-headline {
+    flex: 10%;
+}
+
+.img {
+    width: 250px;
+    height: auto;
+}
+
+.item {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
+    width: 100%;
+
+}
+
+.lista {
+    margin-left: 15%;
+
+}
+
+.images {
+    display: flex;
+    flex-direction: column;
+    margin-right: 15%;
+
+}
+
+.direita {
+    width: 200px;
+    height: auto;
+    margin-left: auto;
+}
+
+li {
+    font-size: 20px;
+    margin-bottom: 5px;
+}
+
+
+section {
+    width: 70%;
+    margin: auto;
+    text-align: center;
+}
+
+.title {
+    text-align: center;
+    width: 100%;
+    font-size: 30px;
+    font-weight: bold;
+}
+
+.planos {
+    border-radius: 35px;
+    padding-bottom: 35px;
+}
+
+.container {
+    width: 80%;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    border-radius: 35px;
+}
+
+footer {
+    padding-bottom: 35px;
+    width: 100%;
+    text-align: center;
+}
+
+.logo-rodape {
+    padding-bottom: 140px;
+}
+
+.agencia {
+    font-size: 33px;
+    font-family: 'Roboto Mono', monospace;
+}
+
+.up {
+    position: fixed;
+    bottom: 20px;
+    left: 5%;
+}
+
+.whats {
+    position: fixed;
+    bottom: 20px;
+    right: 5%;
+}
+
+.whats2,
+.insta,
+.face {
+    width: 25px;
+
+}
