@@ -5,7 +5,7 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: 'Poppins', sans-serif;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
 body {
@@ -24,16 +24,16 @@ body {
     display: flex;
     justify-content: space-between;
     background: #ecb6e6;
-    border-bottom-right-radius: 35px;
-    border-bottom-left-radius: 35px;
-    border-top-right-radius: 35px;
-    border-top-left-radius: 35px;
+    border-bottom-right-radius: 15px;
+    border-bottom-left-radius: 15px;
+    border-top-right-radius: 15px;
+    border-top-left-radius: 15px;
     flex-wrap: wrap;
 }
 
 .wrapper .table {
     width: calc(30%-20px);
-    padding: 10px;
+    padding: 30px;
     border-radius: 15px;
     background: #fff;
     position: relative;
@@ -78,16 +78,15 @@ body {
     left: 75px;
 }
 
-.table .plano {
+/* .table .plano {
     font-size: 35px;
     text-align: center;
     padding: 20px;
-}
+} */
 
 .table .from {
-    font-size: 35px;
-    text-align: center;
-    padding: 20px;
+    font-size: 25px;
+    text-align: center;    
 }
 
 .price-area .inner-area .price {
@@ -111,7 +110,7 @@ body {
     left: 50%;
     top: 50%;
     background: #fff;
-    font-size: 25px;
+    font-size: 15px;
     font-weight: 500;
     padding: 1 15px;
     transform: translate(-50%, -50%);
@@ -124,18 +123,18 @@ body {
     justify-content: space-between;
 }
 
-.features li .list-name {
+/* .features li .list-name {
     font-size: 17px;
     font-weight: 400;
-}
+} */
 
-.table .btn {
+/* .table .btn {
     display: flex;
     justify-content: center;
     margin-top: 35px;
-}
+} */
 
-.table .btn button {
+/* .table .btn button {
     width: 80%;
     height: 50px;
     color: #fff;
@@ -146,11 +145,11 @@ body {
     border-radius: 25px;
     cursor: pointer;
     transition: all 0.3s ease;
-}
+} */
 
-.table .btn button:hover {
+/* .table .btn button:hover {
     border-radius: 5px;
-}
+} */
 
 .table ::selection {
     color: #fff;
@@ -190,11 +189,6 @@ body {
     background: #fff;
     color: #a26bfa;
     border: 2px solid #a26bfa;
-}
-
-.standard .btn button:hover {
-    color: #fff;
-    background: #a26bfa;
 }
 
 .premium ::selection,
@@ -239,8 +233,8 @@ body {
 }
 
 .table .ribbon {
-    height: 150px;
-    width: 150px;
+    height: 90px;
+    width: 90px;
     position: absolute;
     top: -13px;
     left: -13px;
@@ -259,63 +253,49 @@ body {
 
 .table .ribbon::before {
     top: 0px;
-    right: 23px;
+    right: 20px;
 }
 
 .table .ribbon::after {
-    bottom: 23px;
+    bottom: 20px;
     left: 0px;
-}
-
-.table .ribbon span {
-    position: absolute;
-    background: #43ef8b;
-    width: 200px;
-    padding: 10px 0;
-    color: #fff;
-    text-align: center;
-    top: 30px;
-    right: 0px;
-    text-transform: uppercase;
-    transform: rotate(-45deg);
-    box-shadow: 0 5px 10px rgb(0, 0, 15, 0.12);
 }
 
 .navbar {
     transition: top 0.3s;
-    width: 75%;
+    width: 80%;
     display: flex;
     flex-flow: row wrap;
-    height: 130px;
+    height: 100px;
     top: 0;
     align-items: center;
     position: fixed;
-    justify-content: center;
+    justify-content: space-around;
     background-color: #ecb6e6;
     margin-left: 10%;
     border-bottom-left-radius: 15px;
     border-bottom-right-radius: 15px;
+    z-index: 1;
 }
 
 .logo {
     text-align: center;
-    white-space: nowrap;
-
+    white-space: nowrap;  
 }
 
 .logo h1 {
-    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-    font-size: 40px;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 30px;
 }
 
 .menu {
     white-space: nowrap;
-}
+    }
 
 .menu a {
     color: black;
     text-decoration: none;
-    font-size: 20px;
+    font-size: 15px;
     padding: 10px 10px;
 }
 
@@ -337,19 +317,21 @@ body {
 #botao:hover {
     color: #6e379b;
     border-radius: 5px;
-    background: #ecb6e6;
+    background: #fff;
     cursor: pointer;
+    border-top: none;
+    color: black;
 }
 
 #botao2 {
-    padding: 20px;
+    padding: 15px;
     background: #ecb6e6;
     color: black;
     text-decoration: none;
     border-radius: 5px;
     transition: all 0.3s ease;
     font-size: 15px;
-    font-weight: 700;
+    font-weight: bold;
 }
 
 #botao2:hover {
@@ -369,30 +351,31 @@ body {
 
 .headline {
     align-self: flex-start;
-    flex: 70%;
+    flex: 50%;
     margin-bottom: 55px;
 }
 
-.headline h2 {
-    padding: 15px;
+.header h2 {
+    padding-bottom: 15px;
     font-weight: 1000;
     text-align: center;
-    font-size: 45px;
+    font-size: 55px;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+   }
 
-}
-
-.headline h3 {
+.header h3 {
     font-family: 'Roboto Mono', monospace;
     letter-spacing: 2px;
     font-weight: 900;
     font-size: 20px;
     text-align: center;
+    color: grey;
 }
 
 .headline p {
     font-size: 20px;
     text-align: center;
-    margin-left: 5%;
+    padding-top: 50px;
 }
 
 .img-headline {
@@ -400,34 +383,32 @@ body {
 }
 
 .img {
-    width: 250px;
-    height: auto;
+    width: 350px;    
 }
 
 .item {
     margin-top: 55px;
     margin-bottom: 55px;
     display: flex;
-    justify-content: space-between;
+    justify-content: space-around;
     margin-bottom: 20px;
     width: 100%;
-
 }
 
-.lista {
-    margin-left: 15%;
+.lista li{   
+    font-size: 15px;
 
 }
 
 .images {
     display: flex;
-    flex-direction: column;
-    margin-right: 15%;
+    flex-direction: column;  
+    margin-top: -25px;
 
 }
 
 .direita {
-    width: 200px;
+    width: 150px;
     height: auto;
     margin-left: auto;
 }
@@ -447,8 +428,8 @@ section {
 .title {
     text-align: center;
     width: 100%;
-    font-size: 50px;
-    font-weight: bold;
+    font-size: 30px; 
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;   
 }
 
 .planos {
