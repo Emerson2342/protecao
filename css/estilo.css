@@ -22,7 +22,6 @@ body {
     width: 90%;
     display: flex;
     justify-content: space-between;
-    background: #44255c;
     border-bottom-right-radius: 10px;
     border-bottom-left-radius: 10px;
     border-top-right-radius: 10px;
@@ -34,8 +33,8 @@ body {
     width: calc(30%-20px);
     padding: 10px;
     border-radius: 7px;
-    background: #fff;
-    position: relative;
+    background: #44255c;
+    position: relative;    
 }
 
 .table .price-section {
@@ -54,7 +53,7 @@ body {
     height: 100%;
     width: 100%;
     border-radius: 50%;
-    border: 3px solid #fff;
+    border: 3px solid #44255c;
     color: #fff;
     line-height: 130px;
     text-align: center;
@@ -87,6 +86,10 @@ body {
     font-size: 35px;
     text-align: center;
     padding: 20px;
+    color: #fff;
+}
+.adesao{
+    color: #fff;
 }
 
 .price-area .inner-area .price {
@@ -109,7 +112,7 @@ body {
     content: "Plano Roubo e Furto";
     left: 50%;
     top: 50%;
-    background: #fff;
+    background: #44255c;
     font-size: 25px;
     font-weight: 500;
     padding: 1 15px;
@@ -135,26 +138,13 @@ body {
     margin-top: 35px;
 }
 
-/* .table .btn button {
-    width: 80%;
-    height: 50px;
-    color: #fff;
-    font-size: 20px;
-    font-weight: 500;
-    border: none;
-    outline: none;
-    border-radius: 25px;
-    cursor: pointer;
-    transition: all 0.3s ease;
-} */
-
 .table .btn button:hover {
     border-radius: 5px;
 }
 
-.table ::selection {
+/* .table ::selection {
     color: #fff;
-}
+} */
 
 .basic ::selection,
 .basic .price-area,
@@ -162,11 +152,11 @@ body {
     background: #ffd861;
 }
 
-.basic .btn button {
-    background: #fff;
+/* .basic .btn button {
+    background: #44255c;
     color: #ffd861;
     border: 2px solid #ffd861;
-}
+} */
 
 .standard ::selection,
 .standard .price-area,
@@ -176,8 +166,8 @@ body {
     color: #fff;
 }
 
-.standard .btn button {
-    background: #fff;
+/* .standard .btn button {
+    background: #44255c;
     color: #a26bfa;
     border: 2px solid #a26bfa;
 }
@@ -185,7 +175,7 @@ body {
 .standard .btn button:hover {
     color: #fff;
     background: #a26bfa;
-}
+} */
 
 .premium ::selection,
 .premium .price-area,
@@ -218,14 +208,17 @@ body {
 
 .basic .package-name::before {
     content: "Plano Roubo e Furto";
+    color: #fff;
 }
 
 .standard .package-name::before {
     content: "Plano Padrão";
+    color: #fff;
 }
 
 .premium .package-name::before {
     content: "Plano Master";
+    color: #fff;
 }
 
 .table .ribbon {
@@ -403,12 +396,10 @@ body {
 }
 
 .item {
-    margin-top: 55px;
-    margin-bottom: 55px;
     display: flex;
     justify-content: space-around;
-    margin-bottom: 20px;
-    width: 100%;
+    width: 70%;
+    margin: auto;
 }
 
 .lista li {
