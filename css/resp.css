@@ -72,6 +72,10 @@
         width: 48%;
         margin-bottom: 15px;
     }
+
+    .imgBeneficios{
+        width: 150px;
+    }
 }
 
 @media screen and (max-width: 660px) {
@@ -98,11 +102,9 @@
         align-items: center;
     }
 
-    .direita {
-        width: 150px;
-        height: 100px;
-        margin: 5px;
-    }
+  .imgServicos{
+    width: 150px;
+  }
 
     .lista li {
         font-size: 15px;
@@ -112,7 +114,6 @@
 
     .item {
         margin: auto;
-
     }
 
 }
@@ -120,6 +121,9 @@
 @media screen and (max-width: 630px) {
     .logo h1 {
         font-size: 30px;
+    }
+    .menu a {
+        padding: 0;
     }
 
     .wrapper {
@@ -138,14 +142,16 @@
         font-size: 15px;
         padding: 3px;
     }
+    #beneficios .item p{      
+        font-size: 15px;
+  }
 
 }
 
 @media screen and (max-width:520px) {
     .menu a {
         font-size: 13px;
-        padding: 3px;
-    }
+           }
 
     .header h2 {
         font-size: 40px;
@@ -154,14 +160,17 @@
     .header h3 {
         font-size: 15px;
     }
-
-}
-
-@media screen and (max-width: 460px) {
-    .img {
-        height: 200px;
-        width: auto;
+ }
+ @media screen and (max-width: 480px) {
+    #botao{
+        padding: 5px 5px;
+        margin: 0;
     }
+    .menu a{        
+        padding: 5px 5px;
+    }
+ }
+@media screen and (max-width: 460px) {
 
     .wrapper {
         padding: 15px;
@@ -170,18 +179,11 @@
 }
 
 @media screen and (max-width: 420px) {
-    .menu a {
-        padding: 0;
-    }
+  
 }
 
 @media screen and (max-width: 400px) {
-    .img {
-        width: 200px;
-        height: auto;
-    }
-
-
+ 
     .title {
         font-size: 40px;
     }
@@ -190,17 +192,8 @@
 @media screen and (max-width: 380px) {
     .logo h1 {
         font-size: 20px;
+        
     }
 
-    .img {
-        height: 170px;
-        width: auto;
-    }
-}
-
-@media screen and (max-width: 340px) {
-    .img {
-        height: 150px;
-        width: auto;
-    }
+ 
 }

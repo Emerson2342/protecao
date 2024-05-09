@@ -5,7 +5,8 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: #44255c;
+    font-family: 'Montserat', sans-serif;
 }
 
 body {
@@ -142,21 +143,11 @@ body {
     border-radius: 5px;
 }
 
-/* .table ::selection {
-    color: #fff;
-} */
-
 .basic ::selection,
 .basic .price-area,
 .basic .inner-area {
     background: #ffd861;
 }
-
-/* .basic .btn button {
-    background: #44255c;
-    color: #ffd861;
-    border: 2px solid #ffd861;
-} */
 
 .standard ::selection,
 .standard .price-area,
@@ -165,17 +156,6 @@ body {
     background: #a26bfa;
     color: #fff;
 }
-
-/* .standard .btn button {
-    background: #44255c;
-    color: #a26bfa;
-    border: 2px solid #a26bfa;
-}
-
-.standard .btn button:hover {
-    color: #fff;
-    background: #a26bfa;
-} */
 
 .premium ::selection,
 .premium .price-area,
@@ -225,8 +205,8 @@ body {
     height: 150px;
     width: 150px;
     position: absolute;
-    top: -13px;
-    left: -12px;
+    top: -14px;
+    left: -14px;
     overflow: hidden;
 }
 
@@ -242,11 +222,11 @@ body {
 
 .table .ribbon::before {
     top: 0px;
-    right: 22px;
+    right: 24px;
 }
 
 .table .ribbon::after {
-    bottom: 22px;
+    bottom: 24px;
     left: 0px;
 }
 
@@ -291,12 +271,11 @@ body {
 .logo h1 {
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     font-size: 30px;
-    color: #fff;
+    color: #ffd861;
 }
 
 .menu {
     white-space: nowrap;
-
 }
 
 .menu a {
@@ -304,7 +283,7 @@ body {
     text-decoration: none;
     font-size: 15px;
     padding: 10px 10px;
-    color: #fff;
+    color: #ffd861;
 }
 
 .menu a:hover {
@@ -314,7 +293,7 @@ body {
 
 #botao {
     transition: all 0.3s ease;
-    background: #fff;
+    background: #dda847;
     padding: 10px 25px;
     font-weight: 500;
     color: black;
@@ -325,7 +304,7 @@ body {
 
 #botao:hover {
     border-radius: 5px;
-    background: #dda847;
+    background: #fff;
     cursor: pointer;
     border-top: none;
 }
@@ -387,12 +366,20 @@ body {
     text-align: justify;
     width: 70%;
     padding: 10px;
+    align-self: center;
 }
 
 .img {
     width: 350px;
     height: 210px;
     border-radius: 15px;
+}
+
+.imgBeneficios{
+    width: 200px;
+    border-radius: 7px;
+    border: 3px solid #44255c;
+    margin: 5px;
 }
 
 .item {
@@ -406,7 +393,7 @@ body {
     font-size: 17px;
     margin-bottom: 5px;
     font-weight: bold;
-    line-height: 1.5;
+    line-height: 1.5;   
 }
 
 .images {
@@ -414,15 +401,46 @@ body {
     flex-direction: column;
 }
 
-.direita {
-    width: 250px;
-    border-radius: 7px;
-    border: 3px solid #44255c;
+.imgServicos {
+    max-width: 270px;
+    
 }
 
 section {
     width: 70%;
     margin: auto;
+}
+#services{
+    padding: 50px;
+}
+
+#beneficios {
+    display: block;
+    margin: auto;
+    padding: 50px;
+    }
+
+
+#beneficios .item {
+    display: block;
+    width: 95%;
+    
+}
+#beneficios .item p{  
+    margin: auto;
+    text-align: center;
+    font-size: 20px;
+    line-height: 1.7;
+    font-weight: bold;
+    
+}
+
+#beneficios .item .images {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
 }
 
 .title,
@@ -430,12 +448,11 @@ section {
 #beneficios h3,
 #planos h3 {
     text-align: center;
-    width: 100%;
-    font-size: 30px;
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    color: #44255c;
-    padding: 15px;
+  
+    font-size: 50px;
+    color: #22132e;
 }
+
 
 footer {
     padding-bottom: 35px;
