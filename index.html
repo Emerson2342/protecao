@@ -14,10 +14,10 @@
 <body>
     <nav class="navbar">
         <div class="logo">
-            <h1>Maria Xavier Consultoria</h1>
+            <h1 href="#inicio">Maria Xavier Consultoria</h1>
         </div>
         <div class="menu">
-            <a href="#inicio">Início</a>
+            <a >Início</a>
             <a href="#services">Coberturas</a>
             <a href="#planos">Planos</a>
             <a href="#beneficios">Benefícios</a>
@@ -72,13 +72,15 @@
 
         <div id="beneficios">
             <h3>Benefícios</h3>
-            <div class="item">                
-                    <p>Acesso ao Clube Acqua Cerrado + 5 dependentes;</p>
-                    <p>Consultas Médicas online 24h por dia;</p>
-                    <p>50% de desconto no Nicolândia Parque;</p>
-                    <p>50% de desconto no Cinemark;</p>
-                    <p>Assistência Familiar Futura;</li>
-                    <p>**Desconto no Combustível;</p>                    
+            <div class="item"> 
+                <ul>
+                    <li>Acesso ao Clube Acqua Cerrado + 5 dependentes;</li>
+                    <li>Consultas Médicas online 24h por dia;</li>
+                    <li>50% de desconto no Nicolândia Parque;</li>
+                    <li>50% de desconto no Cinemark;</li>
+                    <li>Assistência Familiar Futura;</li>
+                    <li>**Desconto no Combustível;</li>                    
+                </ul>               
                
                 <div class="images">
                     <img class="imgBeneficios" src="./img/clube.jpeg" alt="Carro serguro">
@@ -165,21 +167,7 @@
     <a target="_blank"
         href="https://wa.me/5561996234698?text=Ol%C3%A1%2C+peguei+seu+contato+no+site%2C+gostaria+de+uma+cota%C3%A7%C3%A3o%21"
         class="whats"><img src="img/whats.png"></a>
-    <script>
-        let prevScrollPos = window.pageYOffset;
-
-        window.onscroll = function () {
-            const currentScrollPos = window.pageYOffset;
-
-            if (prevScrollPos > currentScrollPos) {
-                document.querySelector(".navbar").style.top = "0";
-            } else {
-                document.querySelector(".navbar").style.top = "-130px";
-            }
-
-            prevScrollPos = currentScrollPos;
-        }
-    </script>
+  
 
 </body>
 
